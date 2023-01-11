@@ -20,7 +20,7 @@ function Navigation() {
       </div>
 
       <ul
-        className="navigation-menu flex flex-col gap-1 justify-flex-start"
+        className="navigation-menu flex flex-col gap-2 justify-flex-start"
         style={style}
       >
         <li>
