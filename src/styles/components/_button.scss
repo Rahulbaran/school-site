@@ -4,12 +4,16 @@
   border-radius: calc(var(--base-br) * 0.15);
   font-size: calc(var(--base-fs) * 1.1);
   font-family: inherit;
-  font-weight: var(--fw-medium);
   background-color: var(--btn-bg);
   color: var(--btn-text);
 
   &:hover {
     cursor: pointer;
+  }
+
+  &:focus {
+    outline: 2px solid var(--btn-bg);
+    outline-offset: 0.15em;
   }
 }
 

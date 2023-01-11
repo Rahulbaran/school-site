@@ -29,9 +29,12 @@ html {
   box-sizing: inherit;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
   font: var(--fw-regular) var(--base-fs) / var(--base-lh);
   font-family: var(--fs-hubot-sans);
   background-color: var(--tertiary);

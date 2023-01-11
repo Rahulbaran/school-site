@@ -1,15 +1,30 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Navigation() {
+  const [displayNav, setDisplayNav] = useState(false);
+  const style = {
+    display: displayNav ? "flex" : ""
+  };
+
   return (
     <nav className="navigation" aria-labelledby="primary navigation">
-      <button className="navigation-toggle-btn">
-        <i className="ri-menu-2-line"></i>
-      </button>
+      <div className="navigation-toggle-btn-container">
+        <button
+          className="navigation-toggle-btn"
+          title="toggle navigation"
+          onClick={() => setDisplayNav(bool => !bool)}
+        >
+          <i className="ri-menu-line"></i>
+        </button>
+      </div>
 
-      <ul className="navigation-menu">
+      <ul
+        className="navigation-menu flex flex-col gap-1 justify-flex-start"
+        style={style}
+      >
         <li>
-          <NavLink to="home" className="navigation-link">
+          <NavLink to="/" className="navigation-link">
             Home
           </NavLink>
         </li>
@@ -29,15 +44,9 @@ function Navigation() {
           </NavLink>
         </li>
         <li>
-          <div className="gallery-navigation">
-            <span>Gallery</span>
-            <i className="ri-arrow-down-s-fill"></i>
-          </div>
-
-          <div className="gallery-links-wrapper">
-            <NavLink to="gallery/photos">Photos</NavLink>
-            <NavLink to="gallery/videos">Videos</NavLink>
-          </div>
+          <NavLink to="gallery" className="navigation-link">
+            Gallery
+          </NavLink>
         </li>
         <li>
           <NavLink to="contact" className="navigation-link">
