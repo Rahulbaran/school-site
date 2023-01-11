@@ -1,0 +1,14 @@
+@font-face {
+  src: url("/fonts/Grotesk1001.ttf") format("truetype");
+  font-family: "Grotesk 1001";
+  font-weight: 600 900;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("/fonts/Hubot-Sans.woff2") format("woff2"),
+    url("/fonts/Hubot-Sans.woff") format("woff");
+  font-family: "Hubot Sans";
+  font-weight: 300 900;
+  font-style: normal;
+}
