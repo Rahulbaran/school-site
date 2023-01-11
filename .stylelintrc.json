@@ -12,7 +12,10 @@
     "comment-no-empty": true,
     "custom-property-empty-line-before": null,
     "selector-class-pattern": null,
-    "function-name-case": null
+    "function-name-case": null,
+    "declaration-empty-line-before": null,
+    "hue-degree-notation": null,
+    "alpha-value-notation": "number"
   },
   "ignoreFiles": ["node_modules/**/**/*.{scss,css}", "dist/"]
 }
