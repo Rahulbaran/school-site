@@ -6,8 +6,8 @@ import { smLogos } from "../../data/LogosData";
 function LogoSection() {
   return (
     <div className="logo-section">
-      <div className="logo-wrapper">
-        <NavLink to="home" className="logo">
+      <div className="logo-container">
+        <NavLink to="/" className="logo">
           <picture>
             <source type="image/avif" srcSet={smLogos.avif} />
             <source type="image/webp" srcSet={smLogos.webp} />
@@ -22,19 +22,27 @@ function LogoSection() {
         </NavLink>
       </div>
 
-      <div className="contact-wrapper">
-        <a href="mailto:prayaasindia@gmail.com" className="email-link">
+      <div className="contact-container flex flex-col align-flex-start gap-2">
+        <a
+          href="mailto:prayaasindia@gmail.com"
+          className="email-link flex align-center gap-1"
+          title="mail us"
+        >
           <i className="ri-mail-line"></i>
           <span>prayaasindia@gmail.com</span>
         </a>
 
-        <a href="tel:11234567565" className="contact-number-link">
+        <a
+          href="tel:11234567565"
+          className="contact-number-link flex align-center gap-1"
+          title="contact us"
+        >
           <i className="ri-phone-line"></i>
           <span>+91 11234567565</span>
         </a>
       </div>
 
-      <div className="login-btns-wrapper">
+      <div className="login-btns-container flex flex-col align-flex-start gap-2">
         <a
           href="https://akjainmemorial.cloudsoftware.website/site/login"
           className="btn primary-btn teacher-login-btn"

@@ -1,0 +1,34 @@
+:root {
+  --base-fs: 1rem;
+  --base-padding: 0.5em;
+  --base-margin: 0.5em;
+  --base-br: 20px;
+  --base-lh: 1.5;
+  --base-gap: 0.5rem;
+
+  /* FONT WEIGHTS */
+  --fw-regular: 400;
+  --fw-medium: calc(var(--fw-regular, 400) + 100);
+  --fw-semi: calc(var(--fw-medium, 500) + 100);
+  --fw-bold: calc(var(--fw-semi, 600) + 100);
+  --fw-xbold: calc(var(--fw-bold, 700) + 100);
+  --fw-black: calc(var(--fw-xbold, 800) + 100);
+
+  /* FONT STACKS */
+  --fs-hubot-sans: "Hubot Sans", serif;
+  --fs-grotesk: "Grotesk 1001", arial;
+
+  /* COLORS */
+  --primary: hwb(243 12% 73%);
+  --secondary: hwb(356 30% 4%);
+  --tertiary: hwb(34 59% 11%);
+  --disable: hwb(25 24% 25%);
+  --active: hwb(83 89% 2%);
+  --shadow: 0 0% 100%;
+}
+
+// --primary: #222828;
+// --secondary: #766b91;
+// --tertiary: #9cabad;
+// --disable: #f4f5f3;
+// --active: #8d9cb0;

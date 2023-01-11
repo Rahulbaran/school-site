@@ -1,0 +1,24 @@
+.btn {
+  border: none;
+  padding: calc(var(--base-padding) * 1.6) calc(var(--base-padding) * 2);
+  border-radius: calc(var(--base-br) * 0.15);
+  font-size: calc(var(--base-fs) * 1.1);
+  font-family: inherit;
+  font-weight: var(--fw-medium);
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary-btn {
+  --btn-bg: var(--primary);
+  --btn-text: var(--tertiary);
+}
+
+.secondary-btn {
+  --btn-bg: var(--disable);
+  --btn-text: var(--active);
+}

@@ -1,0 +1,18 @@
+$bps: (
+  "medium": 30em,
+  "large": 48em,
+  "xlarge": 79.9375em,
+  "xxlarge": 120em
+);
+
+@mixin breakpoint($size) {
+  @media screen and (width > map-get($bps, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media screen and (max-width: map-get($bps, $size)) {
+    @content;
+  }
+}

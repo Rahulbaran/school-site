@@ -1,0 +1,45 @@
+$justify: flex-end, center, baseline, space-between, space-evenly;
+$alignments: flex-start, flex-end, center;
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+
+  &-col {
+    flex-direction: column;
+  }
+
+  &-nowrap {
+    flex-wrap: nowrap;
+  }
+}
+
+@for $i from 1 through 10 {
+  .gap-#{$i} {
+    gap: calc(var(--base-gap) * #{$i});
+  }
+}
+
+@each $just in $justify {
+  .justify-#{$just} {
+    justify-content: $just;
+  }
+
+  .justify-self-#{$just} {
+    justify-self: $just;
+  }
+}
+
+@each $align in $alignments {
+  .align-#{$align} {
+    align-items: $align;
+  }
+
+  .align-content-#{$align} {
+    align-content: $align;
+  }
+
+  .align-self-#{$align} {
+    align-self: $align;
+  }
+}
