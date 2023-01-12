@@ -1,11 +1,12 @@
 .btn {
   border: none;
-  padding: calc(var(--base-padding) * 1.85) calc(var(--base-padding) * 2);
+  padding: calc(var(--base-padding) * 1.6) calc(var(--base-padding) * 2);
   border-radius: calc(var(--base-br) * 0.15);
   font-size: calc(var(--base-fs) * 1.2);
   font-family: inherit;
   background-color: var(--btn-bg);
   color: var(--btn-text);
+  line-height: calc(var(--base-lh) * 0.9);
 
   &:hover {
     cursor: pointer;
