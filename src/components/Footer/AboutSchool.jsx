@@ -5,8 +5,8 @@ import logos from "../../data/LogosData";
 
 function AboutSchool() {
   return (
-    <div className="about-school-wrapper">
-      <NavLink to="home" className="logo">
+    <div className="about-school-container flex flex-col align-flex-start gap-1">
+      <NavLink to="/" className="logo">
         <picture>
           <source type="image/avif" srcSet={logos.avif} />
           <source type="image/webp" srcSet={logos.webp} />

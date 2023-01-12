@@ -35,8 +35,10 @@ html {
 }
 
 body {
-  font: var(--fw-regular) var(--base-fs) / var(--base-lh);
+  font-size: var(--base-fs);
+  font-weight: var(--fw-regular);
   font-family: var(--fs-hubot-sans);
+  line-height: var(--base-lh);
   background-color: var(--tertiary);
   background-attachment: fixed;
 }

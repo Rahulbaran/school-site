@@ -1,9 +1,9 @@
 function Social() {
   return (
-    <div className="social-links-wrapper">
+    <div className="social-links-container flex flex-col align-center">
       <h3>Social Links</h3>
 
-      <div className="social-links">
+      <div className="social-links flex gap-3">
         <a
           href="https://www.facebook.com/groups/prayaas.bitsindri/"
           className="social-link"
