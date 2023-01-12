@@ -1,20 +1,9 @@
-import SmallAvifLogo from "../assets/logos/logo-small.avif";
-import SmallWebPLogo from "../assets/logos/logo-small.webp";
-import SmallPngLogo from "../assets/logos/logo-small.png";
-import MediumAvifLogo from "../assets/logos/logo.avif";
-import MediumWebPLogo from "../assets/logos/logo.webp";
-import MediumPngLogo from "../assets/logos/logo.png";
+import AvifLogo from "../assets/logo/logo.avif";
+import WebPLogo from "../assets/logo/logo.webp";
+import PngLogo from "../assets/logo/logo.png";
 
-const smLogos = {
-  avif: SmallAvifLogo,
-  webp: SmallWebPLogo,
-  png: SmallPngLogo
+export default {
+  avif: AvifLogo,
+  webp: WebPLogo,
+  png: PngLogo
 };
-
-const mdLogos = {
-  avif: MediumAvifLogo,
-  webp: MediumWebPLogo,
-  png: MediumPngLogo
-};
-
-export { smLogos, mdLogos };
