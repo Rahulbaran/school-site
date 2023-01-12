@@ -30,7 +30,7 @@ function AboutSchool() {
       </div>
 
       <address className="address flex flex-col gap-1 align-flex-start">
-        <p>Main Center, Near BIT Sindri, Dhanbad(Jharkhand), 828123</p>
+        <p>Main Center, Near BIT Sindri, Dhanbad (Jharkhand), 828123</p>
 
         <a
           href="mailto:prayaasindia@gmail.com"
