@@ -13,8 +13,8 @@ function AboutSchool() {
           <img
             src={logos.png}
             alt="school's logo"
-            loading="eager"
-            decoding="sync"
+            loading="lazy"
+            decoding="async"
             title="school's logo"
           />
         </picture>
