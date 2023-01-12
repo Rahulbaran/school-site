@@ -4,7 +4,7 @@
   // * logo section
   .logo-section {
     background-color: var(--active);
-    padding: calc(var(--base-padding) * 3) calc(var(--base-padding) * 2);
+    padding: calc(var(--base-padding) * 3) calc(var(--base-padding) * 4);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
