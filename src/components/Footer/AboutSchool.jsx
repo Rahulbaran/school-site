@@ -16,6 +16,8 @@ function AboutSchool() {
             loading="lazy"
             decoding="async"
             title="school's logo"
+            width="128px"
+            height="128px"
           />
         </picture>
       </NavLink>

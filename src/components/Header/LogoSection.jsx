@@ -17,6 +17,8 @@ function LogoSection() {
               loading="eager"
               decoding="sync"
               title="school's logo"
+              width="112px"
+              height="110px"
             />
           </picture>
         </NavLink>
