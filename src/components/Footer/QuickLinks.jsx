@@ -36,11 +36,6 @@ function QuickLinks() {
             Videos
           </NavLink>
         </li>
-        <li>
-          <NavLink to="contact" className="navigation-link">
-            Contact
-          </NavLink>
-        </li>
       </ul>
     </nav>
   );
