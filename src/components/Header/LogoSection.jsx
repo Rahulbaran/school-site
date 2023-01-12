@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 /* logos data */
-import { smLogos } from "../../data/LogosData";
+import logos from "../../data/LogosData";
 
 function LogoSection() {
   return (
@@ -9,10 +9,10 @@ function LogoSection() {
       <div className="logo-container">
         <NavLink to="/" className="logo">
           <picture>
-            <source type="image/avif" srcSet={smLogos.avif} />
-            <source type="image/webp" srcSet={smLogos.webp} />
+            <source type="image/avif" srcSet={logos.avif} />
+            <source type="image/webp" srcSet={logos.webp} />
             <img
-              src={smLogos.png}
+              src={logos.png}
               alt="school's logo"
               loading="eager"
               decoding="sync"
@@ -25,7 +25,7 @@ function LogoSection() {
       <div className="contact-container flex flex-col align-flex-start gap-2">
         <a
           href="mailto:prayaasindia@gmail.com"
-          className="email-link flex align-center gap-1"
+          className="email-link flex align-center"
           title="mail us"
         >
           <i className="ri-mail-line"></i>
@@ -34,7 +34,7 @@ function LogoSection() {
 
         <a
           href="tel:11234567565"
-          className="contact-number-link flex align-center gap-1"
+          className="contact-number-link flex align-center"
           title="contact us"
         >
           <i className="ri-phone-line"></i>
