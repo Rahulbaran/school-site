@@ -1,17 +1,17 @@
 import { NavLink } from "react-router-dom";
 
 /* logos data */
-import { mdLogos } from "../../data/LogosData";
+import logos from "../../data/LogosData";
 
 function AboutSchool() {
   return (
     <div className="about-school-wrapper">
       <NavLink to="home" className="logo">
         <picture>
-          <source type="image/avif" srcSet={mdLogos.avif} />
-          <source type="image/webp" srcSet={mdLogos.webp} />
+          <source type="image/avif" srcSet={logos.avif} />
+          <source type="image/webp" srcSet={logos.webp} />
           <img
-            src={mdLogos.png}
+            src={logos.png}
             alt="school's logo"
             loading="eager"
             decoding="sync"
