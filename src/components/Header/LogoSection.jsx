@@ -22,7 +22,7 @@ function LogoSection() {
         </NavLink>
       </div>
 
-      <div className="contact-container flex flex-col align-flex-start gap-2">
+      <div className="contact-container flex flex-col align-flex-start gap-1">
         <a
           href="mailto:prayaasindia@gmail.com"
           className="email-link flex align-center"
