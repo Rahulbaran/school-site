@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+/* slider images data */
 import SliderData from "./SliderData";
 
 function Slider() {
@@ -9,14 +10,12 @@ function Slider() {
     const intervalIndex = setInterval(() => {
       setCurIndex(index => (index >= SliderData.length - 1 ? 0 : (index += 1)));
     }, 7000);
-
     return () => clearInterval(intervalIndex);
   });
 
   const prevImgIndex = function () {
     setCurIndex(index => (index <= 0 ? SliderData.length - 1 : (index -= 1)));
   };
-
   const nextImgIndex = function () {
     setCurIndex(index => (index >= SliderData.length - 1 ? 0 : (index += 1)));
   };
@@ -30,7 +29,6 @@ function Slider() {
         loading="eager"
         decoding="sync"
       />
-
       <button
         className="left-arrow-btn"
         title="previous"
