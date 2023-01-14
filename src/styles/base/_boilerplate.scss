@@ -51,7 +51,7 @@ body {
 
   &-track {
     background-color: var(--dull);
-    box-shadow: 2px 0 6px hwb(var(--shadow) / 0.2) inset;
+    box-shadow: 1px 0 6px hwb(var(--shadow) / 0.1) inset;
   }
 
   &-thumb {
