@@ -1,0 +1,60 @@
+.fixed-social-container {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  translate: -3.5em -50%;
+  background-color: var(--active);
+  z-index: 100;
+  padding: var(--base-padding) calc(var(--base-padding) * 1.5);
+  box-shadow: 0 2px 5px hwb(var(--shadow) / 0.25);
+  transition: translate 500ms ease-out;
+
+  .social-toggle-btn {
+    position: absolute;
+    top: 0;
+    right: -2.8em;
+    border: none;
+    background-color: var(--active);
+    box-shadow: 2px 0.5px 3px hwb(var(--shadow) / 0.25);
+
+    span {
+      font-size: calc(var(--base-fs) * 2.5);
+      padding-inline: calc(var(--base-padding) * 0.5);
+      padding-block-end: calc(var(--base-padding) * 0.25);
+      color: var(--secondary);
+    }
+
+    &:hover {
+      opacity: 0.85;
+      cursor: pointer;
+    }
+  }
+
+  .social-link {
+    i {
+      font-size: calc(var(--base-fs) * 2);
+      color: var(--icon-color);
+      transition: opacity 200ms ease-in-out;
+    }
+
+    &:first-of-type i {
+      --icon-color: var(--primary);
+    }
+
+    &:nth-of-type(2) i {
+      --icon-color: hwb(200 20% 10%);
+    }
+
+    &:nth-child(3) i {
+      --icon-color: hwb(0 15% 0%);
+    }
+
+    &:last-child i {
+      --icon-color: hwb(355 10% 0%);
+    }
+  }
+
+  .social-link:hover i {
+    opacity: 0.5;
+  }
+}
