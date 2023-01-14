@@ -2,7 +2,7 @@
   position: fixed;
   top: 50%;
   left: 0;
-  translate: -4em -50%;
+  translate: -4rem -50%;
   background-color: var(--active);
   z-index: 100;
   padding: var(--base-padding) calc(var(--base-padding) * 1.5);
@@ -12,7 +12,7 @@
   .social-toggle-btn {
     position: absolute;
     top: 0;
-    right: -3em;
+    right: -2.75rem;
     border: none;
     background-color: var(--active);
     box-shadow: 2px 0.5px 3px hwb(var(--shadow) / 0.25);
