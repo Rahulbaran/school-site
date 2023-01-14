@@ -1,26 +1,22 @@
 import { NavLink } from "react-router-dom";
 
 /* logos data */
-import logos from "../../data/LogosData";
+import logoData from "../../data/LogoData";
 
 function LogoSection() {
   return (
     <div className="logo-section">
       <div className="logo-container">
         <NavLink to="/" className="logo">
-          <picture>
-            <source type="image/avif" srcSet={logos.avif} />
-            <source type="image/webp" srcSet={logos.webp} />
-            <img
-              src={logos.png}
-              alt="school's logo"
-              loading="eager"
-              decoding="sync"
-              title="school's logo"
-              width="112px"
-              height="110px"
-            />
-          </picture>
+          <img
+            src={logoData.logo}
+            alt="school's logo"
+            loading="eager"
+            decoding="sync"
+            title="school's logo"
+            width="112px"
+            height="110px"
+          />
         </NavLink>
       </div>
 
