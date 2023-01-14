@@ -5,7 +5,7 @@ function QuickLinks() {
     <nav className="footer-navigation" aria-labelledby="secondary navigation">
       <h3>Quick Links</h3>
 
-      <ul className="navigation-menu flex flex-col gap-1 align-flex-start">
+      <ul className="navigation-menu flex flex-col gap-2 align-flex-start">
         <li>
           <NavLink to="/" className="navigation-link">
             Home
