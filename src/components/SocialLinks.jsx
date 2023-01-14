@@ -9,7 +9,7 @@ export default function SocialLinks() {
   );
   const style = {
     translate:
-      socialToggleIcon === ConvertToEntity(187) ? "-3.6em -50%" : "0 -50%"
+      socialToggleIcon === ConvertToEntity(187) ? "-3.5em -50%" : "0 -50%"
   };
 
   const toggleSocialLinks = () => {
