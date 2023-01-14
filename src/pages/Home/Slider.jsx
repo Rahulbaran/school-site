@@ -8,7 +8,7 @@ function Slider() {
   useEffect(() => {
     const intervalIndex = setInterval(() => {
       setCurIndex(index => (index >= SliderData.length - 1 ? 0 : (index += 1)));
-    }, 5000);
+    }, 7000);
 
     return () => clearInterval(intervalIndex);
   });

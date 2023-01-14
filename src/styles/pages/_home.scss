@@ -1,3 +1,5 @@
+@use "../abstracts/breakpoint" as a;
+
 .slider-container {
   width: 100%;
   max-height: 100vh;
@@ -50,5 +52,26 @@
     button span {
       translate: 0;
     }
+  }
+
+  @include a.breakpoint(large) {
+    img {
+      animation: animate-img 7000ms ease-in-out infinite alternate-reverse;
+    }
+  }
+
+  @media (prefers-reduced-motion) {
+    img {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes animate-img {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.15;
   }
 }
