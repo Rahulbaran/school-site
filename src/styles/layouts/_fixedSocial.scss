@@ -2,7 +2,7 @@
   position: fixed;
   top: 50%;
   left: 0;
-  translate: -3.5em -50%;
+  translate: -4em -50%;
   background-color: var(--active);
   z-index: 100;
   padding: var(--base-padding) calc(var(--base-padding) * 1.5);
@@ -12,14 +12,15 @@
   .social-toggle-btn {
     position: absolute;
     top: 0;
-    right: -2.8em;
+    right: -3em;
     border: none;
     background-color: var(--active);
     box-shadow: 2px 0.5px 3px hwb(var(--shadow) / 0.25);
 
     span {
       font-size: calc(var(--base-fs) * 2.5);
-      padding-inline: calc(var(--base-padding) * 0.5);
+      padding-inline: calc(var(--base-padding) * 0.75)
+        calc(var(--base-padding) * 0.5);
       padding-block-end: calc(var(--base-padding) * 0.25);
       color: var(--secondary);
     }
@@ -32,7 +33,7 @@
 
   .social-link {
     i {
-      font-size: calc(var(--base-fs) * 2);
+      font-size: calc(var(--base-fs) * 2.5);
       color: var(--icon-color);
       transition: opacity 200ms ease-in-out;
     }
