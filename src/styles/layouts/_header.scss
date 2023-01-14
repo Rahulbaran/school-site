@@ -24,6 +24,7 @@
     .contact-container {
       a {
         color: var(--disable);
+        padding: calc(var(--base-padding) * 0.25);
         transition: opacity 100ms ease;
 
         &:hover {

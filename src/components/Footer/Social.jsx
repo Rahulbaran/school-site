@@ -3,7 +3,7 @@ function Social() {
     <div className="social-links-container flex flex-col align-center">
       <h3>Social Links</h3>
 
-      <div className="social-links flex gap-5">
+      <div className="social-links flex gap-3">
         <a
           href="https://www.facebook.com/groups/prayaas.bitsindri/"
           className="social-link"

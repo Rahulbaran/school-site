@@ -44,6 +44,7 @@
     a {
       font-style: normal;
       transition: opacity 100ms ease-in-out;
+      padding: calc(var(--base-padding) * 0.25);
 
       span,
       i {
@@ -63,12 +64,17 @@
   // * navigation
   .navigation-menu {
     list-style-type: none;
+
+    .navigation-link {
+      padding: calc(var(--base-padding) * 0.25);
+    }
   }
 
   // * social
   .social-links-container {
     .social-link i {
       font-size: calc(var(--base-fs) * 2);
+      padding: calc(var(--base-padding) * 0.5);
     }
   }
 
