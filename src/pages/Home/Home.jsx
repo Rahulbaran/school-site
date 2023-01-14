@@ -1,7 +1,10 @@
+/** components */
+import Slider from "./Slider";
+
 function Home() {
   return (
     <div className="home-wrapper">
-      <h1>This is homepage</h1>
+      <Slider />
     </div>
   );
 }
