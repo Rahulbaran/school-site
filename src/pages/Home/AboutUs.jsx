@@ -10,7 +10,7 @@ function AboutUs() {
             loading="lazy"
             decoding="async"
             width="128px"
-            height="122px"
+            height="128px"
             src={cardsImgs.class_img}
             alt="online class"
           />
@@ -22,7 +22,7 @@ function AboutUs() {
             loading="lazy"
             decoding="async"
             width="128px"
-            height="122px"
+            height="128px"
             src={cardsImgs.exam_img}
             alt="online examination"
           />
@@ -34,7 +34,7 @@ function AboutUs() {
             loading="lazy"
             decoding="async"
             width="128px"
-            height="122px"
+            height="128px"
             src={cardsImgs.fee_img}
             alt="online fees"
           />
@@ -46,7 +46,7 @@ function AboutUs() {
             loading="lazy"
             decoding="async"
             width="128px"
-            height="122px"
+            height="128px"
             src={cardsImgs.report_img}
             alt="online report card"
           />
