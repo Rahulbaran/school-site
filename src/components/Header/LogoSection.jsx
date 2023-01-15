@@ -42,7 +42,7 @@ function LogoSection() {
 
       <div className="login-btns-container flex flex-col align-flex-start gap-2">
         <a
-          href="https://akjainmemorial.cloudsoftware.website/site/login"
+          href="/"
           className="btn primary-btn teacher-login-btn"
           rel="noopener noreferrer"
           target="_blank"
@@ -51,7 +51,7 @@ function LogoSection() {
         </a>
 
         <a
-          href="https://akjainmemorial.cloudsoftware.website/site/userlogin"
+          href="/"
           className="btn secondary-btn student-login-btn"
           rel="noopener noreferrer"
           target="_blank"
