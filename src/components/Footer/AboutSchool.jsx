@@ -5,7 +5,7 @@ import logoData from "../../data/LogoData";
 
 function AboutSchool() {
   return (
-    <div className="about-school-container flex flex-col align-flex-start gap-1">
+    <div className="about-school-container flex flex-col align-flex-start gap-3">
       <NavLink to="/" className="logo">
         <img
           src={logoData.logo}
