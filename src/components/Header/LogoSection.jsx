@@ -40,7 +40,7 @@ function LogoSection() {
         </a>
       </div>
 
-      <div className="login-btns-container flex flex-col align-flex-start gap-2">
+      <div className="login-btns-container flex flex-col align-flex-start gap-3">
         <a
           href="/"
           className="btn primary-btn teacher-login-btn"
