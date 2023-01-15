@@ -10,6 +10,7 @@
     grid-template-rows: repeat(3, auto);
     gap: calc(var(--base-gap) * 2) 0;
     align-items: flex-start;
+    transition: all 1s ease-out;
 
     .logo img {
       inline-size: 7em;
@@ -77,6 +78,7 @@
     grid-template-rows: repeat(2, auto);
     justify-content: flex-start;
     box-shadow: 0 1px 2px hwb(var(--shadow) / 0.4);
+    transition: all 1s ease-in-out;
 
     &-toggle-btn-container {
       padding: calc(var(--base-padding) * 0.5) calc(var(--base-padding) * 3.5);
