@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 /* slider images data */
-import SliderData from "./SliderData";
+import SliderData from "./data/SliderData";
 
 function Slider() {
   const [curIndex, setCurIndex] = useState(0);
