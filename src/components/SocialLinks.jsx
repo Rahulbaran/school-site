@@ -5,18 +5,17 @@ import ConvertToEntity from "../utils/ConvertToEntity";
 
 export default function SocialLinks() {
   const [socialToggleIcon, setSocialToggleIcon] = useState(
-    ConvertToEntity(187)
+    ConvertToEntity(171)
   );
   const style = {
-    translate:
-      socialToggleIcon === ConvertToEntity(187) ? "-4em -50%" : "0 -50%"
+    translate: socialToggleIcon === ConvertToEntity(171) ? "4em -50%" : "0 -50%"
   };
 
   const toggleSocialLinks = () => {
     setSocialToggleIcon(prev => {
-      return prev === ConvertToEntity(187)
-        ? ConvertToEntity(171)
-        : ConvertToEntity(187);
+      return prev === ConvertToEntity(171)
+        ? ConvertToEntity(187)
+        : ConvertToEntity(171);
     });
   };
 

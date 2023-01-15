@@ -1,8 +1,8 @@
 .fixed-social-container {
   position: fixed;
   top: 50%;
-  left: 0;
-  translate: -4em -50%;
+  right: 0;
+  translate: 4em -50%;
   background-color: var(--active);
   z-index: 100;
   padding: var(--base-padding) calc(var(--base-padding) * 1.5);
@@ -12,12 +12,14 @@
   .social-toggle-btn {
     position: absolute;
     top: 0;
-    right: -2.25em;
+    left: -2.3em;
     border: none;
     background-color: var(--active);
-    box-shadow: 2px 0.5px 3px hwb(var(--shadow) / 0.25);
+    box-shadow: 0 2px 3px hwb(var(--shadow) / 0.15);
     padding-inline: var(--base-padding);
     padding-block-end: calc(var(--base-padding) * 0.5);
+    border-start-start-radius: calc(var(--base-br) * 0.15);
+    border-end-start-radius: calc(var(--base-br) * 0.15);
 
     span {
       font-size: calc(var(--base-fs) * 2.5);
