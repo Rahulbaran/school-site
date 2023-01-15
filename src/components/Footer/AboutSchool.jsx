@@ -20,7 +20,7 @@ function AboutSchool() {
 
       <div className="about-school-label">
         <p>
-          Prayaas India is built in the heart of the city - Isri Bazar. The
+          Prayaas India is built in the heart of the city - Sindri. The
           Building is set in a greenery and pollution free area providing open
           space and fresh air giving it a wholesome ambiance necessary for a
           child’s allround development.
