@@ -80,7 +80,7 @@
 .home-wrapper {
   // * about us
   .about-us-container {
-    padding: calc(var(--base-padding) * 8) calc(var(--base-padding) * 4);
+    padding: calc(var(--base-padding) * 10) calc(var(--base-padding) * 4);
     background-color: var(--active);
     display: grid;
     grid-template-columns: 1fr;
@@ -137,5 +137,97 @@
 
   .know-more-btn {
     margin-block-start: var(--base-margin);
+  }
+
+  // * notice board
+  .notice-board-container {
+    background-color: var(--dull);
+    padding: calc(var(--base-padding) * 10) calc(var(--base-padding) * 4);
+
+    h2 {
+      text-align: center;
+      margin-block-end: calc(var(--base-margin) * 2);
+      font-size: calc(var(--base-fs) * 2);
+    }
+
+    .notice-wrapper {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: calc(var(--base-gap) * 3);
+    }
+
+    .notice {
+      position: sticky;
+      top: var(--top);
+      background-color: var(--active);
+      padding: calc(var(--base-padding) * 2.5) calc(var(--base-padding) * 2);
+      border-radius: calc(var(--base-br) * 0.15);
+      width: 340px;
+      box-shadow: 0 0 3px hwb(var(--shadow) / 0.1);
+      border: 1px dashed var(--disable);
+
+      &:first-of-type {
+        --top: 1em;
+      }
+
+      &:nth-of-type(2) {
+        --top: 2em;
+      }
+
+      &:nth-of-type(3) {
+        --top: 3em;
+      }
+
+      &:nth-of-type(4) {
+        --top: 4em;
+      }
+
+      &:nth-of-type(5) {
+        --top: 5em;
+      }
+    }
+
+    // * media queries
+    @media screen and (width > 48em) {
+      .notice-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .notice {
+        width: 100%;
+
+        &:nth-of-type(2) {
+          --top: 1em;
+        }
+
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
+          --top: 2em;
+        }
+
+        &:nth-of-type(5),
+        &:last-of-type {
+          --top: 3em;
+        }
+      }
+    }
+    @media screen and (width > 72em) {
+      .notice-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .notice {
+        &:nth-of-type(3) {
+          --top: 1em;
+        }
+
+        &:nth-of-type(5),
+        &:last-of-type {
+          --top: 2em;
+        }
+      }
+    }
   }
 }
