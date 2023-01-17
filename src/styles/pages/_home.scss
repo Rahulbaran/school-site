@@ -77,8 +77,8 @@
   }
 }
 
-// * about us
 .home-wrapper {
+  // * about us
   .about-us-container {
     padding: calc(var(--base-padding) * 8) calc(var(--base-padding) * 4);
     background-color: var(--active);
@@ -129,10 +129,8 @@
   }
 
   .about-us-content {
-    h2 {
+    h1 {
       color: var(--secondary);
-      font-weight: var(--fw-bold);
-      font-size: calc(var(--base-fs) * 2);
       margin-block-end: var(--base-margin);
     }
   }
