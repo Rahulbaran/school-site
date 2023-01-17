@@ -55,7 +55,7 @@ function AboutUs() {
       </div>
 
       <div className="about-us-content">
-        <h2>About Us</h2>
+        <h1>About Us</h1>
 
         <div>
           <p>
