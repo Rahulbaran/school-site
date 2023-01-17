@@ -21,7 +21,7 @@
 
   // * about container
   .about-school-container {
-    padding-block-start: calc(var(--base-padding) * 7);
+    padding-block-start: calc(var(--base-padding) * 10);
 
     p {
       color: var(--tertiary);
@@ -87,7 +87,7 @@
     }
   }
 
-  // media queries
+  // * media queries
   @include a.breakpoint(large) {
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: repeat(3, auto);
@@ -95,7 +95,7 @@
 
     .footer-navigation {
       justify-self: center;
-      padding-block-start: calc(var(--base-padding) * 7);
+      padding-block-start: calc(var(--base-padding) * 10);
     }
 
     .social-links-container {
@@ -114,7 +114,7 @@
 
     .social-links-container {
       grid-column: 3 / 4;
-      padding-block-start: calc(var(--base-padding) * 7);
+      padding-block-start: calc(var(--base-padding) * 10);
     }
 
     .social-links {
