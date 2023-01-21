@@ -84,36 +84,37 @@
     background-color: var(--active);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    gap: calc(var(--base-gap) * 8) calc(var(--base-gap) * 2);
-
-    // * media queries
-    @include a.breakpoint(large) {
-      .about-cards-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-      }
-    }
+    grid-auto-rows: auto;
+    gap: calc(var(--base-gap) * 8) calc(var(--base-gap) * 3);
 
     @media screen and (width > 65em) {
       grid-template-columns: 2fr 1.5fr;
-      grid-template-rows: auto;
-
-      .about-card {
-        &:nth-of-type(2),
-        &:last-of-type {
-          justify-self: flex-start;
-        }
-      }
     }
   }
 
   .about-cards-wrapper {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-auto-rows: auto;
     justify-items: center;
-    gap: calc(var(--base-gap) * 5) calc(var(--base-gap) * 3);
+    gap: calc(var(--base-gap) * 5);
+
+    @include a.breakpoint(large) {
+      grid-template-columns: repeat(2, 1fr);
+
+      .about-card {
+        &:first-of-type,
+        &:nth-of-type(3) {
+          justify-self: end;
+        }
+
+        &:nth-of-type(2),
+        &:last-of-type {
+          justify-self: start;
+        }
+      }
+    }
   }
 
   .about-card {
@@ -153,8 +154,8 @@
     .notice-wrapper {
       position: relative;
       display: grid;
-      grid-template-columns: 1fr;
-      justify-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 400px));
+      justify-content: center;
       gap: calc(var(--base-gap) * 3);
     }
 
@@ -164,7 +165,6 @@
       background-color: var(--active);
       padding: calc(var(--base-padding) * 2.5) calc(var(--base-padding) * 2);
       border-radius: calc(var(--base-br) * 0.15);
-      width: 310px;
       box-shadow: 0 0 3px hwb(var(--shadow) / 0.1);
       border: 1px dashed var(--disable);
 
@@ -190,14 +190,8 @@
     }
 
     // * media queries
-    @media screen and (width > 48em) {
-      .notice-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
+    @media screen and (width > 55.5em) {
       .notice {
-        width: 100%;
-
         &:nth-of-type(2) {
           --top: 1em;
         }
@@ -213,11 +207,8 @@
         }
       }
     }
-    @media screen and (width > 72em) {
-      .notice-wrapper {
-        grid-template-columns: repeat(3, 1fr);
-      }
 
+    @media screen and (width > 72em) {
       .notice {
         &:nth-of-type(3) {
           --top: 1em;
