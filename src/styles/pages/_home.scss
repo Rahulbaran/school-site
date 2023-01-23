@@ -235,7 +235,7 @@
     img {
       width: min(540px, 100%);
       margin-inline: auto;
-      box-shadow: 0 0 15px hwb(var(--shadow) / 0.15);
+      box-shadow: 0 0 15px hwb(var(--shadow) / 0.075);
       border-radius: calc(var(--base-br) * 0.2);
     }
 
