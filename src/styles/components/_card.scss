@@ -8,7 +8,7 @@
   background-color: var(--dull);
   width: 300px;
   box-shadow: 0 0 15px hwb(var(--shadow) / 0.15);
-  transition: box-shadow 200ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out;
 
   &:hover {
     box-shadow: 0 8px 10px hwb(var(--shadow) / 0.3);
