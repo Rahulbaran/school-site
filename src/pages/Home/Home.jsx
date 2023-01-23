@@ -2,6 +2,7 @@
 import Slider from "./Slider";
 import AboutUs from "./AboutUs";
 import NoticeBoard from "./NoticeBoard";
+import SchoolInfo from "./SchoolInfo";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Slider />
       <AboutUs />
       <NoticeBoard />
+      <SchoolInfo />
     </div>
   );
 }
