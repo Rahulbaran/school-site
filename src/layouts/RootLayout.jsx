@@ -8,12 +8,13 @@ import QuickLinks from "../components/Footer/QuickLinks";
 import Social from "../components/Footer/Social";
 import Copyright from "../components/Footer/Copyright";
 import SocialLinks from "../components/SocialLinks";
+import ScrollTop from "../components/ScrollTop";
 
 function RootLayout() {
   return (
     <>
       <SocialLinks />
-
+      <ScrollTop />
       <header className="header">
         <LogoSection />
         <Navigation />
