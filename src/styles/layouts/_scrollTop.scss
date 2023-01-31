@@ -1,0 +1,28 @@
+.scroll-top-btn {
+  &-wrapper {
+    position: fixed;
+    inset-inline-end: 10px;
+    inset-block-end: 10px;
+    z-index: 10;
+  }
+
+  background-color: transparent;
+  border: none;
+  translate: 0 30px;
+  opacity: 0;
+  transition: translate 150ms ease-in-out, opacity 100ms ease-in-out;
+
+  i {
+    font-size: calc(var(--base-fs) * 2.25);
+    color: var(--secondary);
+    background-color: var(--dull);
+    line-height: calc(var(--base-lh) * 0.5);
+    padding: calc(var(--base-padding) * 0.4);
+    border-radius: calc(var(--base-br) * 0.25);
+    box-shadow: 0 0 6px hwb(var(--shadow) / 0.25);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
