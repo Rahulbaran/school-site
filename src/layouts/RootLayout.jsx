@@ -1,4 +1,5 @@
-import { Outlet } from "react-router-dom";
+import { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 
 /* components */
 import LogoSection from "../components/Header/LogoSection";
@@ -10,7 +11,21 @@ import Copyright from "../components/Footer/Copyright";
 import SocialLinks from "../components/SocialLinks";
 import ScrollTop from "../components/ScrollTop";
 
-function RootLayout() {
+/* util Functions*/
+import CapitalizeStr from "../utils/CapitalizeStr";
+
+export default function RootLayout() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const pathStrings = location.pathname.split("/");
+    const title = "Prayaas India - An initiative by the students of BIT Sindri";
+    document.title =
+      pathStrings.length > 1 && pathStrings[1] !== ""
+        ? `${CapitalizeStr(pathStrings[1])} | ${title}`
+        : title;
+  });
+
   return (
     <>
       <SocialLinks />
@@ -31,5 +46,3 @@ function RootLayout() {
     </>
   );
 }
-
-export default RootLayout;
