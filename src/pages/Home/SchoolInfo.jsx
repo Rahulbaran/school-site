@@ -1,6 +1,6 @@
 import imgUrl from "./data/SchoolInfoData";
 
-function SchoolInfo() {
+export default function SchoolInfo() {
   return (
     <div className="school-info-container">
       <div className="school-info-image-wrapper">
@@ -36,5 +36,3 @@ function SchoolInfo() {
     </div>
   );
 }
-
-export default SchoolInfo;

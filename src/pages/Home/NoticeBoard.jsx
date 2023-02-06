@@ -1,6 +1,6 @@
 import NoticeData from "./data/NoticeData";
 
-function NoticeBoard() {
+export default function NoticeBoard() {
   return (
     <div className="notice-board-container">
       <h2>Notice Board</h2>
@@ -17,5 +17,3 @@ function NoticeBoard() {
     </div>
   );
 }
-
-export default NoticeBoard;

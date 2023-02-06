@@ -4,7 +4,7 @@ import AboutUs from "./AboutUs";
 import NoticeBoard from "./NoticeBoard";
 import SchoolInfo from "./SchoolInfo";
 
-function Home() {
+export default function Home() {
   return (
     <div className="home-wrapper">
       <Slider />
@@ -14,5 +14,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

@@ -3,14 +3,15 @@ import { useState, useEffect } from "react";
 /* slider images data */
 import SliderData from "./data/SliderData";
 
-function Slider() {
+export default function Slider() {
   const [curIndex, setCurIndex] = useState(0);
 
   useEffect(() => {
-    const intervalIndex = setInterval(() => {
+    const interval = setInterval(() => {
       setCurIndex(index => (index >= SliderData.length - 1 ? 0 : (index += 1)));
     }, 7000);
-    return () => clearInterval(intervalIndex);
+
+    return () => clearInterval(interval);
   });
 
   const prevImgIndex = function () {
@@ -43,4 +44,3 @@ function Slider() {
   );
 }
 
-export default Slider;

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import cardsImgs from "./data/CardsData";
 
-function AboutUs() {
+export default function AboutUs() {
   return (
     <div className="about-us-container">
       <div className="about-cards-wrapper">
@@ -72,12 +72,10 @@ function AboutUs() {
           </p>
         </div>
 
-        <Link className="btn secondary-btn know-more-btn" to="/about">
+        <Link className="btn secondary-btn know-more-btn" to="about">
           Know more
         </Link>
       </div>
     </div>
   );
 }
-
-export default AboutUs;
