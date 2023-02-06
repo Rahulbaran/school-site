@@ -13,6 +13,7 @@ import Rules from "./pages/Rules";
 import Photos from "./pages/Gallery/Photos";
 import Videos from "./pages/Gallery/Videos";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/404";
 
 /* layouts */
 import RootLayout from "./layouts/RootLayout";
@@ -32,7 +33,7 @@ const router = createBrowserRouter(
         <Route path="videos" element={<Videos />} />
       </Route>
 
-      <Route path="*" element={<h1>Not Found</h1>} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
