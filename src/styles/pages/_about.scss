@@ -26,7 +26,7 @@
 
   @media screen and (width > 48em) {
     justify-content: flex-start;
-    padding-inline-start: calc(var(--base-padding) * 4);
+    padding-left: calc(var(--base-padding) * 4);
   }
 }
 
@@ -66,9 +66,6 @@
 }
 
 .about-content-section {
-  strong {
-    font-weight: var(--fw-semi);
-  }
   p {
     &:not(:last-of-type) {
       margin-block-end: calc(var(--base-margin) * 2.5);
