@@ -13,8 +13,8 @@
     color: var(--dull);
     margin-block-end: calc(var(--base-margin) * 2);
     font-size: calc(var(--base-fs) * 1.65);
-    font-weight: var(--fw-bold);
-    text-decoration: underline 0.2rem solid currentcolor;
+    font-weight: var(--fw-semi);
+    text-decoration: underline 0.125em solid currentcolor;
     text-underline-offset: 0.2em;
   }
 
