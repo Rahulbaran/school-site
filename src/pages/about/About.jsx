@@ -7,8 +7,8 @@ export default function About() {
         src={image.img.src}
         alt={image.img.alt}
         srcSet={image.img.srcset}
-        loading="eager"
-        decoding="sync"
+        loading="lazy"
+        decoding="async"
         key={image.img.id}
       />
     );
