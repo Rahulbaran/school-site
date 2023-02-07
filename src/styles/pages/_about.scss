@@ -74,10 +74,20 @@
       margin-block-end: calc(var(--base-margin) * 2.5);
     }
 
-    &:has(ol) ol {
-      margin-block: calc(var(--base-margin) * 2);
-      list-style-position: inside;
-      text-indent: calc(var(--base-margin) * 2);
+    @supports selector(:has(ol) ol) {
+      &:has(ol) ol {
+        margin-block-start: calc(var(--base-margin) * 1.25);
+        list-style-position: inside;
+        text-indent: calc(var(--base-margin) * 2);
+      }
+    }
+
+    @supports not selector(:has(ol) ol) {
+      & ol {
+        margin-block-start: calc(var(--base-margin) * 1.25);
+        list-style-position: inside;
+        text-indent: calc(var(--base-margin) * 2);
+      }
     }
   }
 }
