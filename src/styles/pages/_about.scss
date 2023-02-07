@@ -49,6 +49,8 @@
 }
 
 .about-imgs-section {
+  background-color: var(--dull);
+  padding: var(--base-padding);
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 50vw));
   grid-auto-rows: auto;
