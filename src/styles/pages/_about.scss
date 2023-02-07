@@ -55,7 +55,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(145px, 50vw));
   grid-auto-rows: auto;
-  gap: calc(var(--base-gap) * 1.5) var(--base-gap);
+  gap: var(--base-gap);
   place-content: start center;
 
   img {
