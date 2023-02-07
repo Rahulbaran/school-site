@@ -37,6 +37,7 @@
   grid-auto-rows: auto;
   gap: calc(var(--base-gap) * 4) calc(var(--base-gap) * 2);
   align-content: start;
+  align-items: start;
 
   @media screen and (width > 48em) {
     grid-template-columns: 3fr 1.5fr;
@@ -52,9 +53,9 @@
   background-color: var(--dull);
   padding: var(--base-padding);
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 50vw));
+  grid-template-columns: repeat(2, minmax(140px, 50vw));
   grid-auto-rows: auto;
-  gap: calc(var(--base-gap) * 2);
+  gap: calc(var(--base-gap) * 1.5) var(--base-gap);
   place-content: start center;
 
   img {
