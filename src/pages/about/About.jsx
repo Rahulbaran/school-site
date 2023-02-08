@@ -63,7 +63,7 @@ export default function About() {
           </p>
 
           <p>
-            As we know, only studies will not lead to all - round development of
+            As we know, only studies will not lead to all-round development of
             children. Our main objective is not only to provide good education
             to children but also to provide them a platform to showcase their
             talents. They could not understand the shear importance of education
