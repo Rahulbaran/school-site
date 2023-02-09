@@ -8,7 +8,7 @@ import {
 /* pages */
 import Home from "./pages/Home/Home";
 import About from "./pages/about/About";
-import Academics from "./pages/Academics";
+import Academics from "./pages/academics/Academics";
 import Rules from "./pages/Rules";
 import Photos from "./pages/Gallery/Photos";
 import Videos from "./pages/Gallery/Videos";
