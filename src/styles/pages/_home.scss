@@ -133,6 +133,13 @@
     h1 {
       color: var(--secondary);
       margin-block-end: var(--base-margin);
+      background-image: linear-gradient(
+        to left,
+        var(--primary),
+        var(--secondary)
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 
@@ -149,6 +156,13 @@
       text-align: center;
       margin-block-end: calc(var(--base-margin) * 2);
       font-size: calc(var(--base-fs) * 2);
+      background-image: linear-gradient(
+        to left,
+        var(--primary),
+        var(--secondary)
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .notice-wrapper {
@@ -243,6 +257,13 @@
       margin-block-end: calc(var(--base-margin) * 2);
       color: var(--secondary);
       font-size: calc(var(--base-fs) * 2);
+      background-image: linear-gradient(
+        to left,
+        var(--primary),
+        var(--secondary)
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .school-info p {
