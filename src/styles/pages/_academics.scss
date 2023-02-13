@@ -81,9 +81,10 @@
     font-size: calc(var(--base-fs) * 1.3);
     font-weight: var(--fw-bold);
     background-image: linear-gradient(
-      to left,
-      var(--primary),
-      var(--secondary)
+      to right,
+      var(--disable),
+      var(--secondary),
+      var(--primary)
     );
     background-clip: text;
     -webkit-text-fill-color: transparent;
