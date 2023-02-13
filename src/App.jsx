@@ -9,10 +9,10 @@ import {
 import Home from "./pages/Home/Home";
 import About from "./pages/about/About";
 import Academics from "./pages/academics/Academics";
-import Rules from "./pages/Rules";
+import Rules from "./pages/rules/Rules";
 import Photos from "./pages/Gallery/Photos";
 import Videos from "./pages/Gallery/Videos";
-import Contact from "./pages/Contact";
+import Contact from "./pages/contact/Contact";
 import NotFound from "./pages/404";
 
 /* layouts */
