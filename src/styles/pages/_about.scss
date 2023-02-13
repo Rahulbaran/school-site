@@ -3,31 +3,7 @@
 }
 
 .about-header {
-  background-image: linear-gradient(
-      to top right,
-      hwb(var(--shadow) / 0.5),
-      hwb(var(--shadow) / 0.8)
-    ),
-    url("https://ik.imagekit.io/rahulbaran/school-site/about-page-images/tr:h-250/fourth.jpg");
-  background-position: 60% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  block-size: 12em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  h1 {
-    font-size: calc(var(--base-fs) * 3);
-    color: var(--active);
-    text-shadow: 3px 3px 5px hwb(var(--shadow));
-    letter-spacing: 0.5px;
-  }
-
-  @media screen and (width > 48em) {
-    justify-content: flex-start;
-    padding-left: calc(var(--base-padding) * 4);
-  }
+  --header-bg: url("https://ik.imagekit.io/rahulbaran/school-site/about-page-images/tr:h-250/fourth.jpg");
 }
 
 .about-container {
