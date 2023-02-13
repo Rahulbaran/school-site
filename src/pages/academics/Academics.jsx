@@ -3,7 +3,7 @@ import AcademicsData, { featuresLeft, featuresRight } from "./AcademicsData";
 export default function Academics() {
   return (
     <div className="academics-wrapper">
-      <header className="academics-header">
+      <header className="academics-header page-header">
         <h1>Academics</h1>
       </header>
 

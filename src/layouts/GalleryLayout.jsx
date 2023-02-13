@@ -1,13 +1,13 @@
-import {Outlet} from "react-router-dom";
-
+import { Outlet } from "react-router-dom";
 
 export default function GalleryLayout() {
-    return (
-      <div className="contact-wrapper">
+  return (
+    <div className="gallery-wrapper">
+      <header className="gallery-header page-header">
         <h1>Gallery</h1>
+      </header>
 
-        <Outlet />
-      </div>
-    );
-  }
-  
+      <Outlet />
+    </div>
+  );
+}
