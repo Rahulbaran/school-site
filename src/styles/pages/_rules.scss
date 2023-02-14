@@ -1,4 +1,26 @@
+.rules-wrapper {
+  background-color: var(--active);
+}
+
 .rules-header {
   --header-bg: url("https://ik.imagekit.io/rahulbaran/school-site/rules/rules-header.jpg");
   background-position: 75% 50%;
+}
+
+.rules-container {
+  padding: calc(var(--base-padding) * 8) calc(var(--base-padding) * 4);
+
+  h2 {
+    font-size: calc(var(--base-fs) * 2);
+    font-weight: var(--fw-xbold);
+    margin-block-end: calc(var(--base-margin) * 5);
+    background-image: linear-gradient(
+      to right,
+      var(--primary),
+      var(--secondary),
+      var(--disable)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
