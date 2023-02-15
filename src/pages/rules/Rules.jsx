@@ -8,6 +8,8 @@ export default function Rules() {
       <div className="rules-container">
         <h2>Rules & Regulations to follow</h2>
       </div>
+
+      <div className="rules-cards-container"></div>
     </div>
   );
 }
