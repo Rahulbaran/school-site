@@ -209,6 +209,10 @@
       &:nth-of-type(5) {
         --top: 5em;
       }
+
+      p {
+        font-size: calc(var(--base-fs) * 1.05);
+      }
     }
 
     // * media queries
