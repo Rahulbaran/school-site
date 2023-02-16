@@ -70,6 +70,7 @@
 
     li {
       color: var(--primary);
+      font-size: calc(var(--base-fs) * 1.05);
 
       &:not(:last-of-type) {
         margin-block-end: calc(var(--base-margin) * 0.5);
@@ -83,7 +84,7 @@
     font-weight: var(--fw-medium);
 
     & + ul {
-      text-indent: var(--base-margin);
+      text-indent: calc(var(--base-margin) * 1.5);
     }
   }
 }
