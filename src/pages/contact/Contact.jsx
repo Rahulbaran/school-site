@@ -15,10 +15,10 @@ export default function Contact() {
             in between <strong>08:50 pm</strong> to <strong>01:25pm</strong>.
           </p>
 
-          <div className="contact-medium-container">
+          <div className="contact-medium-container flex flex-col align-flex-start gap-1">
             <a
               href="mailto:prayaasindia@gmail.com"
-              className="email-link flex align-center"
+              className="email-link flex align-center gap-1"
               title="mail us"
             >
               <i className="ri-mail-line"></i>
@@ -27,7 +27,7 @@ export default function Contact() {
 
             <a
               href="tel:11234567565"
-              className="contact-number-link flex align-center"
+              className="contact-number-link flex align-center gap-1"
               title="contact us"
             >
               <i className="ri-phone-line"></i>
@@ -52,7 +52,7 @@ export default function Contact() {
             autoCapitalize="off"
             spellCheck="false"
           >
-            <div className="form-group">
+            <div className="form-group flex flex-col">
               <label htmlFor="fullname">Fullname</label>
               <input
                 type="text"
@@ -63,7 +63,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-group flex flex-col">
               <label htmlFor="email">Email Address</label>
               <input
                 type="email"
@@ -74,7 +74,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-group flex flex-col">
               <label htmlFor="contact">Contact Number</label>
               <input
                 type="number"
@@ -85,7 +85,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-group flex flex-col">
               <label htmlFor="comment">Comment</label>
               <textarea
                 name="comment"
@@ -100,6 +100,10 @@ export default function Contact() {
             </button>
           </form>
         </aside>
+
+        <section className="map-container">
+          <p>Hello I am map of this location</p>
+        </section>
       </div>
     </div>
   );
