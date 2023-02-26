@@ -1,3 +1,57 @@
+.contact-wrapper {
+  background-color: var(--active);
+}
+
 .contact-header {
   --header-bg: url("https://ik.imagekit.io/rahulbaran/school-site/contact/contact-header.jpg");
+}
+
+.contact-info-wrapper {
+  padding-block-start: calc(var(--base-padding) * 8);
+  padding-inline: calc(var(--base-padding) * 4);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-gap: calc(var(--base-gap) * 4);
+
+  h2 {
+    background-image: linear-gradient(
+      to right,
+      var(--primary),
+      var(--secondary),
+      var(--disable)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: var(--fw-semi);
+    margin-block-end: var(--base-margin);
+  }
+
+  .contact-info-container {
+    justify-self: start;
+  }
+
+  // *Media queries
+  @media screen and (width > 48em) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "main aside" "map map";
+
+    .contact-info-container {
+      grid-area: main;
+    }
+
+    .contact-form-container {
+      grid-area: aside;
+    }
+
+    .map-container {
+      grid-area: map;
+    }
+  }
+
+  @media screen and (width > 62em) {
+    grid-template-columns: 1.25fr 0.15fr 1fr;
+    grid-template-areas: "main . aside" "map map map";
+    grid-column-gap: 0;
+  }
 }
