@@ -23,7 +23,8 @@
     "useTabs": false,
     "singleQuote": false,
     "semi": true,
-    "jsxSingleQuote": false
+    "jsxSingleQuote": false,
+    "endOfLine": "auto"
   },
   "browserslist": {
     "development": [
