@@ -34,11 +34,9 @@ export default function Contact() {
               <span>+91 11234567565</span>
             </a>
 
-            <address>
+            <address className="flex align-center gap-1">
               <i className="ri-home-4-line"></i>
-              <span>
-                Main Center, Near BIT Sindri, Dhanbad (Jharkhand), 828123
-              </span>
+              <span>Main Center, Near BIT Sindri, Dhanbad (Jharkhand)</span>
             </address>
           </div>
         </main>
@@ -91,7 +89,7 @@ export default function Contact() {
                 name="comment"
                 id="comment"
                 cols="30"
-                rows="10"
+                rows="5"
               ></textarea>
             </div>
 
