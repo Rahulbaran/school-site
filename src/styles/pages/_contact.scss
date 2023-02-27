@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  grid-gap: calc(var(--base-gap) * 4);
+  grid-gap: calc(var(--base-gap) * 6) calc(var(--base-gap) * 4);
 
   h2 {
     background-image: linear-gradient(
@@ -53,5 +53,46 @@
     grid-template-columns: 1.25fr 0.15fr 1fr;
     grid-template-areas: "main . aside" "map map map";
     grid-column-gap: 0;
+  }
+}
+
+.contact-medium-container {
+  margin-block-start: calc(var(--base-margin) * 2);
+
+  :is(a, address) i {
+    color: var(--disable);
+    font-size: calc(var(--base-fs) * 1.25);
+  }
+
+  a:hover {
+    opacity: 0.75;
+  }
+}
+
+.contact-form-container {
+  .form-group {
+    margin-block-end: var(--base-margin);
+  }
+
+  label {
+    line-height: calc(var(--base-lh) * 0.75);
+  }
+
+  :where(input, textarea) {
+    font-family: inherit;
+    font-size: calc(var(--base-fs) * 1.1);
+    padding: calc(var(--base-padding) * 1.5);
+    border-radius: calc(var(--base-br) * 0.2);
+    border: 1px solid var(--tertiary);
+    color: var(--primary);
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    margin-block-start: var(--base-margin);
+    padding-block: calc(var(--base-padding) * 1.25);
   }
 }
