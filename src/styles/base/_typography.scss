@@ -37,6 +37,10 @@ strong {
   font-weight: var(--fw-semi);
 }
 
+:where(input, textarea, a, button):focus {
+  outline-color: var(--disable);
+}
+
 .page-header {
   background-image: linear-gradient(
       to top right,
