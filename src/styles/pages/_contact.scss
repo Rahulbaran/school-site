@@ -8,11 +8,10 @@
 
 .contact-info-wrapper {
   padding-block-start: calc(var(--base-padding) * 8);
-  padding-inline: calc(var(--base-padding) * 4);
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  grid-gap: calc(var(--base-gap) * 6) calc(var(--base-gap) * 4);
+  grid-gap: calc(var(--base-gap) * 7) calc(var(--base-gap) * 4);
 
   h2 {
     background-image: linear-gradient(
@@ -29,9 +28,10 @@
 
   .contact-info-container {
     justify-self: start;
+    padding-inline: calc(var(--base-padding) * 4);
   }
 
-  // *Media queries
+  // * Media queries
   @media screen and (width > 48em) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "main aside" "map map";
@@ -70,6 +70,8 @@
 }
 
 .contact-form-container {
+  padding-inline: calc(var(--base-padding) * 4);
+
   .form-group {
     margin-block-end: var(--base-margin);
   }
@@ -94,5 +96,13 @@
   button {
     margin-block-start: var(--base-margin);
     padding-block: calc(var(--base-padding) * 1.25);
+  }
+}
+
+/* map container */
+.map-container {
+  iframe {
+    width: 100%;
+    display: block;
   }
 }
