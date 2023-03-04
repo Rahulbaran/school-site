@@ -8,7 +8,7 @@ function Navigation() {
   };
 
   return (
-    <nav className="navigation" aria-labelledby="primary navigation">
+    <nav className="navigation" aria-label="Main">
       <div className="navigation-toggle-btn-container">
         <button
           className="navigation-toggle-btn"

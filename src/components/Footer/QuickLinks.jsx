@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function QuickLinks() {
   return (
-    <nav className="footer-navigation" aria-labelledby="secondary navigation">
+    <nav className="footer-navigation" aria-label="Main">
       <h3>Quick Links</h3>
 
       <ul className="navigation-menu flex flex-col gap-1 align-flex-start">
