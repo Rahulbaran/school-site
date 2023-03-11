@@ -90,6 +90,7 @@
       padding: calc(var(--base-padding) * 0.5);
       transition: opacity 100ms ease-in-out;
 
+      /* stylelint-disable-next-line no-descending-specificity */
       i {
         color: var(--tertiary);
         font-size: calc(var(--base-fs) * 1.75);
