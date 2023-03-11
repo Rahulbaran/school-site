@@ -1,3 +1,34 @@
 .gallery-header {
   --header-bg: url("https://ik.imagekit.io/rahulbaran/school-site/gallery/rules-header.jpg");
 }
+
+.gallery-wrapper {
+  background-color: var(--active);
+}
+
+.gallery-container {
+  padding: calc(var(--base-padding) * 8) calc(var(--base-padding) * 4);
+}
+
+.gallery-navigation {
+  margin-block-end: calc(var(--base-margin) * 2);
+  border-bottom: 0.125em solid var(--tertiary);
+
+  > * {
+    --link: var(--disable);
+    color: var(--link);
+    font-weight: var(--fw-medium);
+    font-size: calc(var(--base-fs) * 1.15);
+    padding: calc(var(--base-padding) * 0.5) var(--base-padding);
+    transition: all 0.25s ease-in-out;
+
+    &.active {
+      --link: var(--secondary);
+    }
+
+    &:hover {
+      background-color: var(--tertiary);
+      --link: var(--secondary);
+    }
+  }
+}
