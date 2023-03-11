@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 
 export default function GalleryLayout() {
   return (
@@ -7,7 +7,14 @@ export default function GalleryLayout() {
         <h1>Gallery</h1>
       </header>
 
-      <Outlet />
+      <div className="gallery-container">
+        <div className="gallery-navigation flex gap-2 align-center">
+          <NavLink to="photos">Photos</NavLink>
+          <NavLink to="videos">Videos</NavLink>
+        </div>
+
+        <Outlet />
+      </div>
     </div>
   );
 }
