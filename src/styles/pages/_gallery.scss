@@ -32,3 +32,17 @@
     }
   }
 }
+
+/* Photos Container */
+.photos-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: calc(var(--base-gap) * 1.25);
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 5px hwb(var(--shadow) / 0.25);
+  }
+}
