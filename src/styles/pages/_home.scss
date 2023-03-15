@@ -54,28 +54,28 @@
     }
   }
 
-  @include a.breakpoint(large) {
-    img {
-      animation: animate-img 7000ms ease-in-out infinite alternate-reverse;
-    }
-  }
+  // @include a.breakpoint(large) {
+  //   img {
+  //     animation: animate-img 3000ms ease-in-out infinite alternate-reverse;
+  //   }
+  // }
 
-  @media (prefers-reduced-motion) {
-    img {
-      animation-play-state: paused;
-    }
-  }
+  // @media (prefers-reduced-motion) {
+  //   img {
+  //     animation-play-state: paused;
+  //   }
+  // }
 }
 
-@keyframes animate-img {
-  0% {
-    scale: 1;
-  }
+// @keyframes animate-img {
+//   0% {
+//     opacity: 0;
+//   }
 
-  100% {
-    scale: 1.15;
-  }
-}
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
 .home-wrapper {
   // * about us
