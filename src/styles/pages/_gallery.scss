@@ -36,7 +36,7 @@
 /* Photos Container */
 .photos-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   grid-auto-rows: auto;
   grid-gap: calc(var(--base-gap) * 1.25);
 
@@ -107,4 +107,19 @@
 
 .swiper-pagination-bullet-active {
   background-color: var(--dull);
+}
+
+/* Videos Container */
+.videos-container {
+  h2 {
+    text-align: center;
+    font-size: calc(var(--base-fs) * 8);
+    color: var(--secondary);
+  }
+
+  h4 {
+    text-align: center;
+    font-size: calc(var(--base-fs) * 1.25);
+    font-weight: var(--fw-semi);
+  }
 }
