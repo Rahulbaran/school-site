@@ -5,30 +5,29 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import "swiper/css/keyboard";
 import "swiper/css/a11y";
 
 /* data */
 import PhotosData from "./PhotosData";
 
 export default function Photos() {
-  const [swiperInfo, setSwiperInfo] = useState({
-    swiperIndex: 0,
-    swiper: false
-  });
+  const [swiperData, setSwiperData] = useState([]);
 
   useEffect(() => {
-    document.body.style.position = swiperInfo.swiper ? "fixed" : "static";
-  }, [swiperInfo]);
+    document.body.style.position = swiperData.length > 0 ? "fixed" : "static";
+  }, [swiperData]);
 
   const handleSlider = e => {
     e.preventDefault();
     const imgIndex = +e.currentTarget.id.split("-")[1];
-    setSwiperInfo({ swiperIndex: imgIndex, swiper: true });
+
+    setSwiperData([
+      ...PhotosData.slice(imgIndex),
+      ...PhotosData.slice(0, imgIndex)
+    ]);
   };
-  const closeSlider = () => {
-    setSwiperInfo({ swiperIndex: 0, swiper: false });
-  };
+
+  const closeSlider = () => setSwiperData([]);
 
   return (
     <main className="container photos-container">
@@ -50,7 +49,7 @@ export default function Photos() {
         ))}
       </div>
 
-      {swiperInfo.swiper && (
+      {swiperData.length > 0 && (
         <Swiper
           modules={[Pagination, Navigation, A11y, Keyboard]}
           pagination={{ clickable: true }}
@@ -62,7 +61,7 @@ export default function Photos() {
             onlyInViewport: false
           }}
         >
-          {PhotosData.map(data => (
+          {swiperData.map(data => (
             <SwiperSlide key={data.id}>
               <img src={data.orgSrc} alt={data.alt} loading="lazy" />
             </SwiperSlide>
