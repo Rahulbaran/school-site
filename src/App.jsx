@@ -10,8 +10,8 @@ import Home from "./pages/Home/Home";
 import About from "./pages/about/About";
 import Academics from "./pages/academics/Academics";
 import Rules from "./pages/rules/Rules";
-import Photos from "./pages/Gallery/Photos";
-import Videos from "./pages/Gallery/Videos";
+import Photos from "./pages/Gallery/photos/Photos";
+import Videos from "./pages/Gallery/videos/Videos";
 import Contact from "./pages/contact/Contact";
 import NotFound from "./pages/404";
 
